@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* headerを追加 */
+header {
+  width: 90%; /* 横幅いっぱい */
+  padding: 15px 0; /* 内側上下15px */
+  margin: 0 auto; /* 中央寄せ （左右に余白がないとできない）*/
+}
+
+header .heading {
+  font-size: 32px;
+}
 
 .main-visual {
   width: 100%;
@@ -29,4 +39,9 @@
 .sidebar {
   width: 240px;
   height: 1400px;
+}
+/* footerを追加 */
+footer {
+  width: 100%; /* 横いっぱい */
+  height: 120px; /* 高さ120px */
 }
