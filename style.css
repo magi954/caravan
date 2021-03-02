@@ -2,16 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #6c6b6b; /* 全ての色を統一 */
 }
-/* headerを追加 */
+
+a {
+  text-decoration: none; /* 下線消し */
+}
+
 header {
-  width: 90%; /* 横幅いっぱい */
-  padding: 15px 0; /* 内側上下15px */
-  margin: 0 auto; /* 中央寄せ （左右に余白がないとできない）*/
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header .heading {
   font-size: 32px;
+}
+/* nav要素 */
+.nav-list {
+  text-align: center; /* 中央添え（ブロック要素） */
+  padding: 10px 0; /* 内側上下10余白 */
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none; /* リストマーカーなし */
+  display: inline-block; /* インラインブロック要素 */
+  margin: 0 20px; /* 外側左右20px */
 }
 
 .main-visual {
@@ -40,8 +58,15 @@ header .heading {
   width: 240px;
   height: 1400px;
 }
-/* footerを追加 */
+
 footer {
-  width: 100%; /* 横いっぱい */
-  height: 120px; /* 高さ120px */
+  width: 100%;
+  height: 120px;
+  text-align: center; /* 子要素を左右中央 */
+  line-height: 120px; /* 上下中央添え(親要素の高さ＝行の高さ) */
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff; /* 文字色 */
 }
